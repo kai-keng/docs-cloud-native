@@ -1,0 +1,37 @@
+title: 'Cloud Native'
+description: '云原生技术合集'
+base: "/docs-cloud-native/"
+themeConfig:
+  # 导航栏
+  nav:
+    - text: "首页"
+      link: "/"
+    - text: "容器"
+      link: "/container/"
+    - text: "Kubernetes"
+      link: "/kubernetes/"
+    - text: "Service Mesh"
+      link: "/service-mesh/"
+    - text: "集群管理平台"
+      link: "/manage-platform/"
+  
+  # 侧边栏
+  sidebar:
+    "/container/":
+      - title: 容器
+        collapsable: false
+        sidebarDepth: 1
+        children:
+          - /container/intro
+    "/kubernetes/":
+      - title: Kubernetes
+        collapsable: false
+        sidebarDepth: 1
+        children:
+          - /kubernetes/intro
+    "/service-mesh/":
+      - title: Service Mesh
+        collapsable: false
+        sidebarDepth: 1
+        children:
+          - /service-mesh/intro
