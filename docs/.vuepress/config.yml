@@ -23,6 +23,7 @@ themeConfig:
         sidebarDepth: 1
         children:
           - /container/intro
+          - /container/basic-tech
     "/kubernetes/":
       - title: Kubernetes
         collapsable: false
