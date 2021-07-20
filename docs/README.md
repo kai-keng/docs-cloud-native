@@ -6,8 +6,8 @@
 
 ## 参考资料
 
-- [kubernetes-handbook](https://jimmysong.io/kubernetes-handbook/)
 - [Kubernetes指南](https://kubernetes.feisky.xyz/)
-- [深入剖析Kubernetes-张磊-极客时间](https://time.geekbang.org/column/intro/100015201)
-- [Docker从入门到实践](https://yeasy.gitbook.io/docker_practice/)
 - [Kubernetes官方文档](https://kubernetes.io/zh/docs/home/)
+- [深入剖析Kubernetes[张磊/极客时间]](https://time.geekbang.org/column/intro/100015201)
+- [kubernetes-handbook](https://jimmysong.io/kubernetes-handbook/)
+- [Docker从入门到实践](https://yeasy.gitbook.io/docker_practice/)

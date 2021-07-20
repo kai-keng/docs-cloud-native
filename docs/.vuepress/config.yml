@@ -12,8 +12,6 @@ themeConfig:
       link: "/kubernetes/"
     - text: "Service Mesh"
       link: "/service-mesh/"
-    - text: "集群管理平台"
-      link: "/manage-platform/"
   
   # 侧边栏
   sidebar:
@@ -30,6 +28,9 @@ themeConfig:
         sidebarDepth: 1
         children:
           - /kubernetes/intro
+          - /kubernetes/usage
+          - /kubernetes/ops
+          - /kubernetes/manage-platform
     "/service-mesh/":
       - title: Service Mesh
         collapsable: false
