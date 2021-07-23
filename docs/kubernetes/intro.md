@@ -17,4 +17,49 @@ Kubernetes - 生产级别的容器编排系统。实现自动化的容器部署�
 
 ## 基本概念及架构
 
-## 基础组件
+![Kubernetes 集群](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
+
+## 控制平面组件 [Control Plane]
+
+控制平面组件负责集群的管理，一般单独部署在 Master 节点上，不会运行用户容器。
+
+### kube-apiserver
+
+REST API 服务，对外提供用于管理集群的 Kubernetes API；
+
+### etcd
+
+分布式 key-value 数据库，用于存储 k8s 集群数据
+
+### kube-scheduler
+
+Pod 调度组件
+
+### kube-controller-manager
+
+Pod 控制器，包括：`Node Controller`
+
+### cloud-controller-manager
+
+第三方云平台供应商接入
+
+## Node 组件
+
+部署在每个 Node 节点即 Worker 节点上。
+
+### kubelet
+
+运行在每个k8s节点上，负责 pod 管理
+
+### kube-proxy
+
+运行在每个k8s节点上，负责每个节点的网络代理
+
+### Container-Runtime 容器运行时
+
+Kubernetes CRI
+
+## 插件
+
+### DNS
+
