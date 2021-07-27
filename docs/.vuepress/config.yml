@@ -6,13 +6,16 @@ themeConfig:
   nav:
     - text: "首页"
       link: "/"
-    - text: "容器"
+    - text: "container"
       link: "/container/"
     - text: "Kubernetes"
       link: "/kubernetes/"
     - text: "Service Mesh"
       link: "/service-mesh/"
-  
+    - text: "github"
+      link: "https://github.com/kai-keng/docs-cloud-native"
+    - text: "开坑主站"
+      link: "https://kai-keng.github.io"
   # 侧边栏
   sidebar:
     "/container/":

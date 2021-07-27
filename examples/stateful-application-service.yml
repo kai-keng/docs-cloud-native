@@ -1,0 +1,28 @@
+# mysql Headless service - 为每个 member 分配访问域名，可单独访问主库，执行写操作
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-mysql-headless-service
+  labels:
+    app: mysql
+spec:
+  selector:
+    app: mysql
+  clusterIP: None # 设置为 Headless service
+  ports:
+  - name: mysql
+    port: 3306
+---
+# mysql service - mysql 统一个访问域名，以执行读操作
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-mysql-read-service
+  labels:
+    app: mysql
+spec:
+  selector:
+    app: mysql
+  ports:
+  - name: mysql
+    port: 3306
