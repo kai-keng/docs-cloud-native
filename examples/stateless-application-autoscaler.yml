@@ -1,0 +1,8 @@
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: demo-nginx-autoscaler
+spec:
+  scaleTargetRef:
+    kind: apps/v1
+    name: demo-nginx-deployment

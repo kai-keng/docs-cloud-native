@@ -35,6 +35,12 @@ Kubernetes 采用声明式的 API，大多数变更可通过 `kubectl apply -f $
 
 **有状态应用：**
 
+- `kubectl apply -f examples/stateful-application-configmap.yml`: 创建/更新应用关联的配置信息
+- `kubectl apply -f examples/stateful-application-statefulset.yml`: 创建/更新有状态应用
+- `kubectl apply -f examples/stateful-application-service.yml`: 创建/更新有状态的服务(headlessService & Service)
+
+
+
 ## 水平伸缩应用程序
 
 ## 更新应用程序

@@ -4,9 +4,9 @@ base: "/docs-cloud-native/"
 themeConfig:
   # 导航栏
   nav:
-    - text: "首页"
+    - text: "Home"
       link: "/"
-    - text: "container"
+    - text: "Container"
       link: "/container/"
     - text: "Kubernetes"
       link: "/kubernetes/"
