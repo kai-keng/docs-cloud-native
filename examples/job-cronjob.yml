@@ -1,0 +1,22 @@
+# Kubernetes v1.21 之后 CronJob 提升为正式(GA)版本
+# apiVersion: batch/v1
+
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: demo-echo-cronjob
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: busybox
+            image: busybox
+            imagePullPolicy: IfNotPresent
+            command:
+            - /bin/sh
+            - -c
+            - date; echo Hello from the Kubernetes cluster
+          restartPolicy: OnFailure
