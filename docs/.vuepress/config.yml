@@ -31,8 +31,9 @@ themeConfig:
         sidebarDepth: 1
         children:
           - /kubernetes/intro
+          - /kubernetes/concept
           - /kubernetes/usage
-          - /kubernetes/ops
+          - /kubernetes/dev-ops
           - /kubernetes/engineered
           - /kubernetes/manage-platform
     "/service-mesh/":

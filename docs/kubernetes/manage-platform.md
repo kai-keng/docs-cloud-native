@@ -1,4 +1,4 @@
-# k8s 集群管理平台
+# 可视化管理平台
 
 - [官方] kubernetes Dashboard
 - [开源社区] Rancher / OpenShift

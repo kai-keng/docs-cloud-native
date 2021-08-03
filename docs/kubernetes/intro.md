@@ -15,7 +15,7 @@ Kubernetes - 生产级别的容器编排系统。实现自动化的容器部署�
 - 水平伸缩能力
 - 插件机制的扩展性
 
-## 基本概念及架构
+## 基本架构
 
 ![Kubernetes 集群](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
 
@@ -37,7 +37,7 @@ Pod 调度组件
 
 ### kube-controller-manager
 
-Pod 控制器，包括：`Node Controller`
+Pod 控制器，包括：`Node Controller` / `Job Controller` / `Endpoints Controller` / `Service Account Controller`
 
 ### cloud-controller-manager
 
@@ -59,7 +59,10 @@ Pod 控制器，包括：`Node Controller`
 
 Kubernetes CRI
 
-## 插件
+## 插件 [Addons]
 
 ### DNS
 
+### 集群资源监控
+
+### 集群日志
