@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-hotrod
+spec:
+  selector:
+    matchLabels:
+      app: example-hotrod
+  template:
+    metadata:
+      labels:
+        app: example-hotrod
+    spec:
+      containers:
+        - name: example-hotrod
+          image: jaegertracing/example-hotrod:1.24
+          env:
+            - name: JAEGER_AGENT_HOST
+              value: simplest-agent.observability.svc.cluster.local
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "1000m"
+          ports:
+            - containerPort: 8080
+            - containerPort: 8081
+            - containerPort: 8082
+            - containerPort: 8083

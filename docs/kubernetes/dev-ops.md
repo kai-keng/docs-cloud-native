@@ -10,4 +10,5 @@
 
 ## 链路追踪
 
-这里使用 CNCF 提出的分布式链路追踪规约 [Opentracing](https://opentracing.io/);
+这里使用 CNCF 提出的分布式链路追踪规约 [Opentracing](https://opentracing.io/) 的开源实现 [jaeger](https://www.jaegertracing.io);
+

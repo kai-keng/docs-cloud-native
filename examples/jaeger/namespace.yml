@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: observability
+  labels:
+    # rancher 管理平台相关配置项
+    cattle.io/creator: norman
+    field.cattle.io/projectId: p-jlsnr
+  annotations:
+    # rancher 管理平台相关配置项
+    field.cattle.io/projectId: c-j6zps:p-jlsnr
