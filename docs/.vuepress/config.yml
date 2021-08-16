@@ -34,7 +34,6 @@ themeConfig:
           - /kubernetes/concept
           - /kubernetes/usage
           - /kubernetes/dev-ops
-          - /kubernetes/engineered
           - /kubernetes/manage-platform
     "/service-mesh/":
       - title: Service Mesh
